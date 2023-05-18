@@ -1,6 +1,6 @@
 import { styled } from "../../styles/stitches.config";
-import { Flex } from "../../styles/Global"
-import { Text } from "../../styles/Text"
+import { Flex } from "../../styles/Global";
+import { Text } from "../../styles/Text";
 
 export const Project = styled("article", {
   marginTop: "4rem",
@@ -11,8 +11,8 @@ export const ProjectStack = styled(Flex, {
 });
 
 export const ProjectStackTech = styled("span", {
-  backgroundColor: "$brand4",
-  color: "$brand2",
+  backgroundColor: "$brand2",
+  color: "$grey1",
   padding: "0  0.5rem",
   borderRadius: "$2",
 });
@@ -30,11 +30,11 @@ export const ProjectLink = styled("a", {
   alignItems: "center",
   lineHeight: "0",
 
-  "&:hover":{
-    color: "$grey1"
+  "&:hover": {
+    color: "$grey1",
   },
 
   [`& svg`]: {
-    marginRight: "$1"
-  }
+    marginRight: "$1",
+  },
 });

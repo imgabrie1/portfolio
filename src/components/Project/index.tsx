@@ -59,7 +59,7 @@ export const Project = (): JSX.Element => {
             <ProjectStack>
               <Text type="body2">Linguagem:</Text>
               <ProjectStackTech>
-                <Text color="brand1" type="body2">
+                <Text color="grey1" type="body2">
                   {repository.language}
                 </Text>
               </ProjectStackTech>

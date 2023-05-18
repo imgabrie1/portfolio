@@ -67,7 +67,7 @@ export const NavLinks = (): JSX.Element => {
     <NavbarLinks>
       {userData.whatsappNumber && (
         <Button
-          type="primary"
+          type="whatsapp"
           as="a"
           target="_blank"
           href={`https://api.whatsapp.com/send?phone=+55${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
@@ -78,7 +78,7 @@ export const NavLinks = (): JSX.Element => {
 
       {userData.githubUser && (
         <Button
-          type="icon"
+          type="github"
           target="_blank"
           as="a"
           aria-label="Github"
@@ -90,7 +90,7 @@ export const NavLinks = (): JSX.Element => {
 
       {userData.linkedinUser && (
         <Button
-          type="icon"
+          type="linkedin"
           target="_blank"
           as="a"
           aria-label="LinkedIn"

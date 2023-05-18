@@ -54,6 +54,7 @@ export const StackCards = styled("div", {
 
 export const ProjectsArea = styled("section", {
   padding: "4rem 0 8rem 0",
+  backgroundColor: "$brand1",
 });
 
 export const ProjectsAreaSocialMediaMessage = styled("aside", {

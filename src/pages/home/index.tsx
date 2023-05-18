@@ -24,7 +24,6 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-
 export const Home = (): JSX.Element => {
   return (
     <main>
@@ -40,7 +39,7 @@ export const Home = (): JSX.Element => {
               desenvolvendo habilidades
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" href="#projetos">
+              <Button as="a" href="#projetos" type="primary" color="grey5">
                 Projetos
               </Button>
               <Button as="a" href="#tecnologias" type="btLink" color="grey5">
@@ -89,7 +88,7 @@ export const Home = (): JSX.Element => {
               </Text>
               <Text as="h3" type="heading2" color="grey1">
                 Originalidade e{" "}
-                <Text as="span" color="brand1" type="heading2">
+                <Text as="span" color="brand2" type="heading2">
                   dedicação
                 </Text>{" "}
                 em cada detalhe
