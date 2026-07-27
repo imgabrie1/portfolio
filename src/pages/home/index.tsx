@@ -31,12 +31,11 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Desenvolvedor Full Stack
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              Cursos pela Kenzie Academy Brasil e Alura. Trabalho com
+              desenvolvimento web, criando aplicações do zero ao deploy.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos" type="primary" color="grey5">
@@ -69,9 +68,8 @@ export const Home = (): JSX.Element => {
                 Vamos trocar uma ideia?
               </Text>
               <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+                Tem um projeto em mente ou quer trocar uma ideia? Me chama no
+                LinkedIn ou WhatsApp.
               </Text>
               <Button
                 type="primary"
@@ -87,11 +85,7 @@ export const Home = (): JSX.Element => {
                 Projetos
               </Text>
               <Text as="h3" type="heading2" color="grey1">
-                Originalidade e{" "}
-                <Text as="span" color="brand2" type="heading2">
-                  dedicação
-                </Text>{" "}
-                em cada detalhe
+                Alguns projetos que fiz
               </Text>
               <Project />
             </ProjectsAreaContent>

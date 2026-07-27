@@ -16,7 +16,7 @@ interface ReposType {
   name: string;
   language: string;
   description: string;
-  git_url: string;
+  html_url: string;
   homepage: string;
 }
 
@@ -31,13 +31,15 @@ export const Project = (): JSX.Element => {
 
       const json = await data.json();
 
-      setRepositories(json);
-
       if (!data.ok) {
         throw data;
       }
 
-      return json;
+      const filtered = json.filter((repo: ReposType) =>
+        userData.featuredProjects.includes(repo.name)
+      );
+
+      setRepositories(filtered);
     };
     fetchData();
   }, []);
@@ -70,11 +72,14 @@ export const Project = (): JSX.Element => {
             {repository.description}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
+            <ProjectLink target="_blank" href={repository.html_url}>
               <FaGithub /> Github Code
             </ProjectLink>
-            {repository.homepage && (
-              <ProjectLink target="_blank" href={repository.homepage}>
+            {(userData.deployUrls as Record<string, string>)[repository.name] && (
+              <ProjectLink
+                target="_blank"
+                href={(userData.deployUrls as Record<string, string>)[repository.name]}
+              >
                 <FaShare /> Aplicação
               </ProjectLink>
             )}

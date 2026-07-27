@@ -23,6 +23,7 @@ export const StackCard = styled("div", {
     position: "absolute",
     transform: "translateY(-15%)",
     background: "$whiteFixed",
+    color: "$grey2",
     boxShadow: "drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12))",
     padding: "0.4rem 1rem",
     borderRadius: "$1",
